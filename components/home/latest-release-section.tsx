@@ -55,19 +55,12 @@ export function LatestReleaseSection() {
             {/* Album Art */}
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm group">
               <Image
-                src="/images/worshipper.jpg"
-                alt="Muri Mutsvene Album Cover"
+                src="/covers/mwari-ngaakudzwe.jpeg"
+                alt="Mwari Ngaakudzwe Cover"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
-
-              {/* Play Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center gold-glow">
-                  <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-t-transparent border-b-transparent border-l-charcoal ml-1" />
-                </div>
-              </div>
             </div>
 
             {/* Song Details */}

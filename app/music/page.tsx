@@ -11,31 +11,24 @@ import { fadeUp, fadeInScale, cardElevation, staggerContainer, viewportSettings 
 const featuredSessions = [
   {
     id: 1,
-    title: "Muri Mutsvene - Live Worship",
+    title: "Worship Sessions",
     description: "An intimate live worship session featuring the powerful anthem declaring God's holiness.",
-    thumbnail: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2940&auto=format&fit=crop",
+    thumbnail: "/covers/mwari-ngaakudzwe.jpeg",
     duration: "12:34",
   },
   {
     id: 2,
-    title: "Hallowed Be Your Name - Studio Session",
+    title: "Worship Sessions",
     description: "Experience the reverence of worship in this Spirit-filled studio recording.",
-    thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2940&auto=format&fit=crop",
+    thumbnail: "/covers/mwari-ngaakudzwe.jpeg",
     duration: "8:45",
   },
   {
     id: 3,
-    title: "Prophetic Worship Night",
+    title: "Worship Sessions",
     description: "A live recording from a powerful prophetic worship service with testimonials.",
-    thumbnail: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2940&auto=format&fit=crop",
+    thumbnail: "/covers/mwari-ngaakudzwe.jpeg",
     duration: "45:20",
-  },
-  {
-    id: 4,
-    title: "Mwari Makanaka - Acoustic",
-    description: "Stripped-back acoustic version of this beloved worship song.",
-    thumbnail: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=2940&auto=format&fit=crop",
-    duration: "6:12",
   },
 ]
 
