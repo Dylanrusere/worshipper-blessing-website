@@ -71,7 +71,7 @@ export default function MusicPage() {
         <PageHero
           title="Worship Sounds"
           subtitle="Experience the atmosphere of heaven through anointed worship music"
-          backgroundImage="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-5.jpg"
         />
 
         {/* Featured Worship Sessions */}

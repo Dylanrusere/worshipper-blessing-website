@@ -5,50 +5,24 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { PageHero } from "@/components/page-hero"
-import { Calendar, Play, Music2 } from "lucide-react"
+import { Calendar, Play } from "lucide-react"
 import { fadeUp, fadeInScale, cardElevation, staggerContainer, viewportSettings } from "@/lib/animations"
 
 const albums = [
   {
     id: 1,
-    title: "Hallowed Be Your Name",
+    title: "My Attestation",
     year: "2024",
     description: "A powerful collection of worship anthems declaring the holiness and majesty of God.",
-    coverImage: "https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=2940&auto=format&fit=crop",
+    coverImage: "/covers/mwari-ngaakudzwe.jpeg",
+    // Use the Album Link for the main cover play button
+    albumSpotifyUrl: "https://open.spotify.com/album/43y2jZpPZpGz7rK4X2X6Xk", 
     tracks: [
-      "Hallowed Be Your Name",
-      "In Your Presence",
-      "Holy Ground",
-      "Throne Room Worship",
-      "The Name Above All Names",
-    ],
-  },
-  {
-    id: 2,
-    title: "Mwari Makanaka",
-    year: "2023",
-    description: "Celebrating God's goodness through heartfelt Shona worship songs.",
-    coverImage: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2940&auto=format&fit=crop",
-    tracks: [
-      "Mwari Makanaka",
-      "Ndinokuda",
-      "Muri Zuva",
-      "Rumbidzai Jehovah",
-      "Tsvene",
-    ],
-  },
-  {
-    id: 3,
-    title: "#MyAttestation",
-    year: "2022",
-    description: "Personal testimonies transformed into worship, sharing stories of God's faithfulness.",
-    coverImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2940&auto=format&fit=crop",
-    tracks: [
-      "My Testimony",
-      "He Did It Again",
-      "Faithful God",
-      "Never Failing",
-      "Amazing Grace (Live)",
+      { name: "Chishamiso - Coming May 25th", spotifyId: null },
+      { name: "Mwari Ngaakudzwe", spotifyId: "3jopujUNNNcYjBUHnDzJEJ" },
+      { name: "Hallowed Be Your Name", spotifyId: "57ycClB4V7hSBq1lhQvEU0" },
+      { name: "Vimba naJesu", spotifyId: "2Ut1HbXiy1YWXOYfhnqo0n" },
+      { name: "Mwari Makanaka", spotifyId: "42tQh2J1aLNRjk90vQVhUc" },
     ],
   },
 ]
@@ -56,28 +30,11 @@ const albums = [
 const singles = [
   {
     id: 1,
-    title: "Muri Mutsvene",
+    title: "Tinokudza",
+    spotifyId: "2Ut1HbXiy1YWXOYfhnqo0n",
     featuring: "Feat. Oncemore Six",
     year: "2024",
-    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2940&auto=format&fit=crop",
-  },
-  {
-    id: 2,
-    title: "Kingdom Come",
-    year: "2024",
-    coverImage: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=2940&auto=format&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Spirit Move",
-    year: "2023",
-    coverImage: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2940&auto=format&fit=crop",
-  },
-  {
-    id: 4,
-    title: "Draw Me Closer",
-    year: "2023",
-    coverImage: "https://images.unsplash.com/photo-1507901747481-84a4f64fda6d?q=80&w=2940&auto=format&fit=crop",
+    coverImage: "/covers/mwari-ngaakudzwe.jpeg",
   },
 ]
 
@@ -102,22 +59,13 @@ export default function DiscographyPage() {
               viewport={viewportSettings}
               className="text-center mb-16"
             >
-              <motion.p
-                variants={fadeUp}
-                className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4"
-              >
+              <motion.p variants={fadeUp} className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4">
                 Full Projects
               </motion.p>
-              <motion.h2
-                variants={fadeUp}
-                className="font-serif text-3xl md:text-4xl lg:text-5xl text-ivory mb-6"
-              >
+              <motion.h2 variants={fadeUp} className="font-serif text-3xl md:text-4xl lg:text-5xl text-ivory mb-6">
                 Albums
               </motion.h2>
-              <motion.div
-                variants={fadeUp}
-                className="h-px w-24 bg-gold/50 mx-auto"
-              />
+              <motion.div variants={fadeUp} className="h-px w-24 bg-gold/50 mx-auto" />
             </motion.div>
 
             <motion.div
@@ -131,12 +79,12 @@ export default function DiscographyPage() {
                 <motion.div
                   key={album.id}
                   variants={cardElevation}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start ${
                     index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Album Cover */}
-                  <motion.div 
+                  <motion.div
                     variants={fadeInScale}
                     className={`relative aspect-square max-w-md mx-auto lg:mx-0 group ${
                       index % 2 === 1 ? "lg:order-2" : ""
@@ -149,51 +97,56 @@ export default function DiscographyPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
-                    {/* Play Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <motion.button
+
+                    {/* Play Overlay - Links to full Album */}
+                    <a
+                      href={album.albumSpotifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <motion.div
                         whileHover={{ scale: 1.1 }}
                         className="w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center gold-glow"
                       >
                         <Play className="w-8 h-8 text-charcoal ml-1" fill="currentColor" />
-                      </motion.button>
-                    </div>
+                      </motion.div>
+                    </a>
 
-                    {/* Border */}
-                    <div className="absolute inset-0 border border-gold/20 group-hover:border-gold/40 transition-colors duration-300" />
+                    <div className="absolute inset-0 border border-gold/20 group-hover:border-gold/40 transition-colors duration-300 pointer-events-none" />
                   </motion.div>
 
-                  {/* Album Info */}
+                  {/* Album Info & Tracklist */}
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                     <div className="flex items-center gap-3 mb-4">
                       <Calendar size={16} className="text-gold/60" />
                       <span className="text-gold/80 text-sm">{album.year}</span>
                     </div>
-                    <h3 className="font-serif text-3xl md:text-4xl text-ivory mb-4">
-                      {album.title}
-                    </h3>
-                    <p className="text-ivory/60 leading-relaxed mb-6">
-                      {album.description}
-                    </p>
+                    <h3 className="font-serif text-3xl md:text-4xl text-ivory mb-4">{album.title}</h3>
+                    <p className="text-ivory/60 leading-relaxed mb-8">{album.description}</p>
 
-                    {/* Track List */}
-                    <div className="space-y-3">
-                      <p className="text-gold/80 text-sm tracking-wide uppercase mb-4">
-                        Track List
-                      </p>
+                    <div className="space-y-4">
+                      <p className="text-gold/80 text-sm tracking-wide uppercase mb-4">Track List</p>
                       {album.tracks.map((track, trackIndex) => (
-                        <div
-                          key={track}
-                          className="flex items-center gap-4 p-3 bg-secondary/30 border border-border/20 hover:border-gold/30 transition-colors duration-300 group cursor-pointer"
-                        >
-                          <span className="text-gold/50 text-sm w-6">
-                            {String(trackIndex + 1).padStart(2, "0")}
-                          </span>
-                          <span className="text-ivory/80 flex-1 group-hover:text-ivory transition-colors">
-                            {track}
-                          </span>
-                          <Play size={14} className="text-gold/40 group-hover:text-gold transition-colors" />
+                        <div key={trackIndex} className="w-full">
+                          {track.spotifyId ? (
+                            <iframe
+                              src={`https://open.spotify.com/embed/track/${track.spotifyId}?utm_source=generator&theme=0`}
+                              width="100%"
+                              height="80"
+                              frameBorder="0"
+                              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                              loading="lazy"
+                              className="rounded-lg shadow-lg border border-white/5"
+                            ></iframe>
+                          ) : (
+                            <div className="flex items-center gap-4 p-4 bg-secondary/30 border border-border/20 rounded-lg">
+                              <span className="text-gold/50 text-sm w-6">
+                                {String(trackIndex + 1).padStart(2, "0")}
+                              </span>
+                              <span className="text-ivory/60 italic text-sm">{track.name}</span>
+                            </div>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -214,22 +167,13 @@ export default function DiscographyPage() {
               viewport={viewportSettings}
               className="text-center mb-16"
             >
-              <motion.p
-                variants={fadeUp}
-                className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4"
-              >
+              <motion.p variants={fadeUp} className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4">
                 Latest Releases
               </motion.p>
-              <motion.h2
-                variants={fadeUp}
-                className="font-serif text-3xl md:text-4xl lg:text-5xl text-ivory mb-6"
-              >
+              <motion.h2 variants={fadeUp} className="font-serif text-3xl md:text-4xl lg:text-5xl text-ivory mb-6">
                 Singles
               </motion.h2>
-              <motion.div
-                variants={fadeUp}
-                className="h-px w-24 bg-gold/50 mx-auto"
-              />
+              <motion.div variants={fadeUp} className="h-px w-24 bg-gold/50 mx-auto" />
             </motion.div>
 
             <motion.div
@@ -244,32 +188,35 @@ export default function DiscographyPage() {
                   key={single.id}
                   variants={cardElevation}
                   whileHover={{ y: -8 }}
-                  className="group cursor-pointer"
+                  className="group"
                 >
-                  {/* Cover */}
-                  <div className="relative aspect-square mb-4 overflow-hidden">
-                    <Image
-                      src={single.coverImage}
-                      alt={single.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center gold-glow">
-                        <Play className="w-5 h-5 text-charcoal ml-0.5" fill="currentColor" />
+                  <a 
+                    href={`https://open.spotify.com/track/${single.spotifyId}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="relative aspect-square mb-4 overflow-hidden rounded-md">
+                      <Image
+                        src={single.coverImage}
+                        alt={single.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center gold-glow">
+                          <Play className="w-5 h-5 text-charcoal ml-0.5" fill="currentColor" />
+                        </div>
                       </div>
+                      <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/40 transition-colors duration-300" />
                     </div>
-                    <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/40 transition-colors duration-300" />
-                  </div>
 
-                  {/* Info */}
-                  <h4 className="font-serif text-lg text-ivory group-hover:text-gold transition-colors duration-300 mb-1">
-                    {single.title}
-                  </h4>
-                  {single.featuring && (
-                    <p className="text-gold/60 text-sm mb-1">{single.featuring}</p>
-                  )}
-                  <p className="text-ivory/40 text-sm">{single.year}</p>
+                    <h4 className="font-serif text-lg text-ivory group-hover:text-gold transition-colors duration-300 mb-1">
+                      {single.title}
+                    </h4>
+                    {single.featuring && <p className="text-gold/60 text-sm mb-1">{single.featuring}</p>}
+                    <p className="text-ivory/40 text-sm">{single.year}</p>
+                  </a>
                 </motion.div>
               ))}
             </motion.div>
