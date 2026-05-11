@@ -10,6 +10,12 @@ import { fadeUp, fadeInScale, cardElevation, staggerContainer, viewportSettings,
 
 const ministryPillars = [
   {
+    icon: BookOpen,
+    title: "Anointing goes beyond Gift",
+    description: "When we worship with pure hearts, the glory of the Lord fills His temple and His presence manifests powerfully.",
+    scripture: "2 Chronicles 5:13-14 - The glory of the Lord filled the temple of God",
+  },
+  {
     icon: Heart,
     title: "Healing",
     description: "The ministry operates in divine healing, where the sick receive their healing through worship. Many testimonies of miraculous healings have been recorded during worship sessions.",
@@ -130,7 +136,7 @@ export default function MinistryPage() {
               initial="hidden"
               whileInView="visible"
               viewport={viewportSettings}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8"
+              className="grid grid-cols-1 md:grid-cols-4 gap-8"
             >
               {ministryPillars.map((pillar) => (
                 <motion.div
@@ -207,7 +213,9 @@ export default function MinistryPage() {
 
               <motion.div variants={fadeUp} className="space-y-6 text-ivory/70 leading-relaxed text-lg">
                 <p>
-                  The name &ldquo;The Worshipper Blessing&rdquo; carries a profound spiritual meaning. 
+                  <strong className="text-gold">&ldquo;Anointing goes beyond Gift&rdquo;</strong> — 
+                  This is the foundational truth that defines our ministry. The name 
+                  &ldquo;The Worshipper Blessing&rdquo; carries a profound spiritual meaning. 
                   It speaks of the transformation that occurs when one becomes a true worshipper — 
                   the blessing that flows both to the worshipper and through the worshipper 
                   to others.

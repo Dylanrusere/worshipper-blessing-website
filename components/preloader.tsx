@@ -107,7 +107,7 @@ export function Preloader() {
               ease: "easeOut"
             }}
           >
-            The Worshipper
+            The Worshipper Blessing
           </motion.p>
         </motion.div>
       )}

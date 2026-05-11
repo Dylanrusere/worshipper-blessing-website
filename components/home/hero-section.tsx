@@ -76,7 +76,7 @@ export function HeroSection() {
           variants={heroText}
           className="font-serif text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-ivory leading-[1.1] mb-6 max-w-5xl mx-auto text-balance"
         >
-          Bringing Kingdom Worship to the World
+          Anointing goes beyond Gift
         </motion.h1>
 
         <motion.div

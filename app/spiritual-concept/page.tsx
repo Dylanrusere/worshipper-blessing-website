@@ -10,6 +10,21 @@ import { fadeUp, cardElevation, staggerContainer, viewportSettings, lineExpand }
 const concepts = [
   {
     id: 1,
+    icon: BookOpen,
+    title: "Anointing goes beyond Gift",
+    content: [
+      "Our foundational motto, drawn from 2 Chronicles 5:13-14, encapsulates the essence of true worship. When the trumpeters and musicians joined in unison to give praise and thanks to the Lord, accompanied by instruments, the singers raised their voices in praise saying, 'He is good; his love endures forever.'",
+      "Then the temple of the Lord was filled with the cloud, and the priests could not perform their service because of the cloud, for the glory of the Lord filled the temple of God.",
+      "This scripture reveals that anointing transcends mere talent or gifting. It is the divine empowerment that flows when worship creates an atmosphere where heaven invades earth, where God's glory manifests, and where His presence becomes tangible.",
+      "In our ministry, we understand that while gifts are important, it is the anointing that brings transformation, healing, and breakthrough. The anointing carries the weight of God's presence and power.",
+    ],
+    scripture: {
+      text: "The trumpeters and musicians joined in unison to give praise and thanks to the Lord... Then the temple of the Lord was filled with the cloud, for the glory of the Lord filled the temple of God.",
+      reference: "2 Chronicles 5:13-14",
+    },
+  },
+  {
+    id: 2,
     icon: Heart,
     title: "What True Worship Means",
     content: [

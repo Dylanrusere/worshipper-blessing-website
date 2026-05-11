@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { PageHero } from "@/components/page-hero"
-import { Youtube, Facebook, Mail, Send, CheckCircle } from "lucide-react"
+import { Youtube, Facebook, Instagram, TicketIcon,Mail, Send, CheckCircle } from "lucide-react"
 import { fadeUp, cardElevation, staggerContainer, viewportSettings, lineExpand } from "@/lib/animations"
 
 const socialLinks = [
@@ -14,14 +14,24 @@ const socialLinks = [
     icon: Youtube,
     href: "https://www.youtube.com/@TheWorshipperBlessing",
     handle: "@TheWorshipperBlessing",
-    description: "Watch worship sessions, music videos, and live recordings",
   },
   {
     name: "Facebook",
     icon: Facebook,
-    href: "https://facebook.com",
+    href: "https://facebook.com/BlessingChinakidzwa",
     handle: "The Worshipper Blessing",
-    description: "Join our community and stay updated on ministry activities",
+  },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://instagram.com/the_worshipper_blessing_music",
+    handle: "The Worshipper Blessing",
+  },
+  {
+    name: "TikTok",
+    icon: TicketIcon,
+    href: "https://tiktok.com/@theworshipperblessing",
+    handle: "The Worshipper Blessing",
   },
 ]
 
@@ -114,7 +124,6 @@ export default function ConnectPage() {
                           {social.name}
                         </p>
                         <p className="text-gold/70 text-sm">{social.handle}</p>
-                        <p className="text-ivory/50 text-sm mt-1">{social.description}</p>
                       </div>
                     </motion.a>
                   ))}

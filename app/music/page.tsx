@@ -50,7 +50,7 @@ const streamingPlatforms = [
   { 
     name: "Spotify", 
     icon: Music2, 
-    href: "#",
+    href: "https://open.spotify.com/artist/7g8tmqTM3bLeNOTW4bNzI1",
     color: "#1DB954",
     description: "Stream full discography"
   },
@@ -114,7 +114,7 @@ export default function MusicPage() {
               initial="hidden"
               whileInView="visible"
               viewport={viewportSettings}
-              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+              className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               {featuredSessions.map((session) => (
                 <motion.div

@@ -18,12 +18,12 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'The Worshipper Blessing | Kingdom Worship',
+  title: 'The Worshipper Blessing | Anointing goes beyond Gift',
   description: 'Experience the sacred atmosphere of worship with The Worshipper Blessing (Blessing Murewa Chinakidzwa). Through music, healing, and prophetic worship, bringing Kingdom Worship to the world.',
   keywords: ['worship', 'gospel', 'Zimbabwe', 'Blessing Murewa Chinakidzwa', 'ZAOGA FIFMI', 'healing', 'deliverance', 'restoration'],
   authors: [{ name: 'The Worshipper Blessing' }],
   openGraph: {
-    title: 'The Worshipper Blessing | Kingdom Worship',
+    title: 'The Worshipper Blessing | Anointing goes beyond Gift',
     description: 'Experience the sacred atmosphere of worship. Through music, healing, and prophetic worship.',
     type: 'website',
   },

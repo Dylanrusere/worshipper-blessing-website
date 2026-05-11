@@ -6,17 +6,15 @@ import { fadeUp, staggerContainer, viewportSettings } from "@/lib/animations"
 import { Youtube, Music2, Apple, Music } from "lucide-react"
 
 const streamingPlatforms = [
-  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@TheWorshipperBlessing" },
-  { name: "Spotify", icon: Music2, href: "#" },
-  { name: "Apple Music", icon: Apple, href: "#" },
-  { name: "Amazon Music", icon: Music, href: "#" },
+  { name: "YouTube", icon: Youtube, href: "https://youtu.be/WNMfn_9UiU0" },
+  { name: "Spotify", icon: Music2, href: "https://open.spotify.com/track/3jopujUNNNcYjBUHnDzJEJ?si=e9dab4af1efa430f" },
 ]
 
 export function LatestReleaseSection() {
   return (
     <section className="py-24 md:py-32 bg-charcoal relative overflow-hidden">
       {/* Background Accent */}
-      <div 
+      <div
         className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none"
         style={{
           background: "radial-gradient(ellipse at right, rgba(212, 175, 55, 0.3) 0%, transparent 70%)",
@@ -50,7 +48,7 @@ export function LatestReleaseSection() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportSettings}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16"
         >
           {/* Left Column - Album Info */}
           <motion.div variants={fadeUp} className="space-y-8">
@@ -63,7 +61,7 @@ export function LatestReleaseSection() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
-              
+
               {/* Play Overlay */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center gold-glow">
@@ -75,14 +73,10 @@ export function LatestReleaseSection() {
             {/* Song Details */}
             <div className="text-center lg:text-left">
               <h3 className="font-serif text-3xl md:text-4xl text-ivory mb-2">
-                Muri Mutsvene
+                Mwari Ngaakudzwe (Glory be to God)
               </h3>
-              <p className="text-gold text-lg mb-4">
-                Feat. Oncemore Six
-              </p>
               <p className="text-ivory/60 leading-relaxed max-w-md">
-                A powerful worship anthem declaring the holiness of God. This song invites 
-                the presence of the Lord and leads worshippers into deep reverence and adoration.
+                A worship and daily conversation to give thanks, acknowledging God's power in our lives because  he is a good God!
               </p>
             </div>
 
@@ -107,23 +101,18 @@ export function LatestReleaseSection() {
           {/* Right Column - Spotify Embed Placeholder */}
           <motion.div variants={fadeUp} className="relative">
             <div className="bg-secondary/50 rounded-lg p-6 border border-border/30">
-              <div className="aspect-[4/5] md:aspect-[3/4] bg-charcoal/50 rounded-md flex flex-col items-center justify-center text-center p-8">
-                <Music2 size={48} className="text-gold/40 mb-4" />
-                <p className="text-ivory/60 text-sm mb-2">
-                  Listen on Spotify
-                </p>
-                <p className="text-ivory/40 text-xs max-w-xs">
-                  Embedded player would appear here with full album playback
-                </p>
-                <motion.a
-                  href="https://open.spotify.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  className="mt-6 px-6 py-2 bg-[#1DB954] text-charcoal text-sm font-medium rounded-full hover:bg-[#1ed760] transition-colors"
-                >
-                  Open Spotify
-                </motion.a>
+              <div className="flex justify-center p-6">
+                <div className="w-full max-w-2xl shadow-2xl rounded-xl overflow-hidden bg-black/20">
+                  {/* Spotify Embed */}
+                  <iframe
+                    src={`https://open.spotify.com/embed/track/3jopujUNNNcYjBUHnDzJEJ?utm_source=generator&theme=0`}
+                    width="100%"
+                    height="152"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </motion.div>

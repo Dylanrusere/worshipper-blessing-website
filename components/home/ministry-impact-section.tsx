@@ -1,10 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Sparkles, RefreshCw } from "lucide-react"
+import { Heart, Sparkles, RefreshCw, BookOpen } from "lucide-react"
 import { fadeUp, cardElevation, staggerContainer, viewportSettings } from "@/lib/animations"
 
 const pillars = [
+  {
+    icon: BookOpen,
+    title: "Anointing goes beyond Gift",
+    description: "When we worship with pure hearts, the glory of the Lord fills His temple and His presence manifests powerfully.",
+  },
   {
     icon: Heart,
     title: "Healing",
@@ -66,7 +71,7 @@ export function MinistryImpactSection() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportSettings}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-4 gap-8"
         >
           {pillars.map((pillar) => (
             <motion.div
