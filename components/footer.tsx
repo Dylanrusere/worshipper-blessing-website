@@ -86,7 +86,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} The Worshipper Blessing. All rights reserved.
           </p>
           <p className="text-xs text-ivory/40">
-            A sacred worship experience
+            Anointing goes beyond Gift
           </p>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function DiscographyPage() {
         <PageHero
           title="Discography"
           subtitle="A collection of anointed worship music spanning years of ministry"
-          backgroundImage="https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-4.jpg"
         />
 
         {/* Albums Section */}

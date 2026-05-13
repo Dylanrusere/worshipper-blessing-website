@@ -239,7 +239,7 @@ export default function ConnectPage() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="py-24 md:py-32 bg-secondary/30">
+        {/* <section className="py-24 md:py-32 bg-secondary/30">
           <div className="container mx-auto px-6">
             <motion.div
               variants={staggerContainer}
@@ -302,7 +302,7 @@ export default function ConnectPage() {
               />
             </motion.div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
