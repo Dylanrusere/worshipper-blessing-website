@@ -89,7 +89,7 @@ export default function SpiritualConceptPage() {
         <PageHero
           title="Spiritual Concept"
           subtitle="Understanding the theology and power of true worship"
-          backgroundImage="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-3.jpg"
         />
 
         {/* Introduction */}

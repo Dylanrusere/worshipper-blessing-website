@@ -14,61 +14,20 @@ const upcomingEvents = [
     title: "Kingdom Worship Night",
     date: "April 15, 2026",
     time: "6:00 PM",
-    location: "ZAOGA Assembly, Harare",
+    location: "ZAOGA CCCI Assembly, Harare",
     description: "A powerful evening of worship, prayer, and prophetic ministry. Come expecting an encounter with God.",
-    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=2940&auto=format&fit=crop",
+    image: "/images/hero-5.jpg",
     featured: true,
-  },
-  {
-    id: 2,
-    title: "Healing & Deliverance Service",
-    date: "April 22, 2026",
-    time: "10:00 AM",
-    location: "Faith Arena, Bulawayo",
-    description: "A special service focused on divine healing and deliverance through worship.",
-    image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2940&auto=format&fit=crop",
-    featured: false,
-  },
-  {
-    id: 3,
-    title: "Worship Conference 2026",
-    date: "May 10-12, 2026",
-    time: "All Day",
-    location: "Celebration Centre, Victoria Falls",
-    description: "Three days of intensive worship training, impartation, and prophetic ministry.",
-    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2940&auto=format&fit=crop",
-    featured: false,
   },
 ]
 
 const pastEvents = [
   {
     id: 1,
-    title: "New Year Worship Night",
-    date: "January 1, 2026",
-    location: "ZAOGA Assembly, Harare",
+    title: "My Attestation Live Recording",
+    date: "October 3, 2025",
+    location: "ZAOGA CCCI Assembly, Harare",
     attendees: "2,500+",
-  },
-  {
-    id: 2,
-    title: "Easter Celebration Service",
-    date: "March 31, 2024",
-    location: "National Sports Stadium",
-    attendees: "15,000+",
-  },
-  {
-    id: 3,
-    title: "Muri Mutsvene Album Launch",
-    date: "November 15, 2023",
-    location: "Harare International Conference Centre",
-    attendees: "3,000+",
-  },
-  {
-    id: 4,
-    title: "South Africa Worship Tour",
-    date: "October 2023",
-    location: "Multiple Venues, South Africa",
-    attendees: "10,000+",
   },
 ]
 
@@ -171,8 +130,8 @@ export default function EventsPage() {
 
                       <div>
                         <button className="inline-flex items-center gap-2 text-gold hover:text-ivory transition-colors duration-300 group/btn">
-                          <span className="tracking-wide">Learn More</span>
-                          <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
+                          {/* <span className="tracking-wide">Learn More</span>
+                          <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" /> */}
                         </button>
                       </div>
                     </div>
