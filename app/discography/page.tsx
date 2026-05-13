@@ -33,7 +33,7 @@ const albums = [
     albumSpotifyUrl: "#", 
     tracks: [
       { name: "Hossana", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=9xe05v9Ux9I" },
-      { name: "Jehovha we worship you", spotifyId: null, youtubeUrl: null },
+      { name: "Jehovha we worship You", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=dGqmG0MZHs0" },
       { name: "Ranaka", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=AMuphfsu_0w&pp=0gcJCQQLAYcqIYzv" },
       { name: "Glory to the Son of God", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=gIO2a5jFuXY" },
       { name: "Mbiri kuGwayana", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=YHHEEv94r-0" },
@@ -43,17 +43,17 @@ const albums = [
   {
     id: 3,
     title: "God Remains",
-    year: "2024", // Adjust year as needed
+    year: "2021", // Adjust year as needed
     description: "An exploration of God's unchanging nature through traditional and contemporary worship.",
     coverImage: "/covers/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
     albumSpotifyUrl: "#", 
     tracks: [
-      { name: "God Remains", spotifyId: null, youtubeUrl: null },
-      { name: "Tinokudza zita renyu Jesu", spotifyId: null, youtubeUrl: null },
-      { name: "Yahweh", spotifyId: null, youtubeUrl: null },
+      { name: "God Remains", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=N7_kZF8qRCM&pp=0gcJCQQLAYcqIYzv" },
+      { name: "Tinokudza zita renyu Jesu", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=diar6WDvm40" },
+      { name: "Yahweh", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=AdiEf5SiC-8" },
       { name: "We worship you", spotifyId: null, youtubeUrl: null },
-      { name: "We praise you", spotifyId: null, youtubeUrl: null },
-      { name: "Ishe ndiMwari", spotifyId: null, youtubeUrl: null },
+      { name: "We praise you", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=9uAqo5JYWxU&pp=0gcJCQQLAYcqIYzv" },
+      { name: "Ishe ndiMwari", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=cWU0EzDdGcY" },
       { name: "Hallelujah", spotifyId: null, youtubeUrl: null },
     ],
   },
