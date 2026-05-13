@@ -17,31 +17,44 @@ const albums = [
     coverImage: "/covers/mwari-ngaakudzwe.jpeg",
     albumSpotifyUrl: "https://open.spotify.com/album/43y2jZpPZpGz7rK4X2X6Xk", 
     tracks: [
-      { 
-        name: "Chishamiso", 
-        spotifyId: null, 
-        youtubeUrl: null
-      },
-      { 
-        name: "Mwari Ngaakudzwe", 
-        spotifyId: "3jopujUNNNcYjBUHnDzJEJ", 
-        youtubeUrl: null 
-      },
-      { 
-        name: "Hallowed Be Your Name", 
-        spotifyId: "57ycClB4V7hSBq1lhQvEU0", 
-        youtubeUrl: null 
-      },
-      { 
-        name: "Vimba naJesu", 
-        spotifyId: "2Ut1HbXiy1YWXOYfhnqo0n", 
-        youtubeUrl: null 
-      },
-      { 
-        name: "Mwari Makanaka", 
-        spotifyId: "42tQh2J1aLNRjk90vQVhUc", 
-        youtubeUrl: null 
-      },
+      { name: "Chishamiso", spotifyId: null, youtubeUrl: null },
+      { name: "Mwari Ngaakudzwe", spotifyId: "3jopujUNNNcYjBUHnDzJEJ", youtubeUrl: null },
+      { name: "Hallowed Be Your Name", spotifyId: "57ycClB4V7hSBq1lhQvEU0", youtubeUrl: null },
+      { name: "Vimba naJesu", spotifyId: "2Ut1HbXiy1YWXOYfhnqo0n", youtubeUrl: null },
+      { name: "Mwari Makanaka", spotifyId: "42tQh2J1aLNRjk90vQVhUc", youtubeUrl: null },
+    ],
+  },
+  {
+    id: 2,
+    title: "Untitled Album (Live Sessions)",
+    year: "2023", // Adjust year as needed
+    description: "Raw, powerful live recordings capturing the essence of spontaneous worship.",
+    coverImage: "/covers/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
+    albumSpotifyUrl: "#", 
+    tracks: [
+      { name: "Hossana", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=9xe05v9Ux9I" },
+      { name: "Jehovha we worship you", spotifyId: null, youtubeUrl: null },
+      { name: "Ranaka", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=AMuphfsu_0w&pp=0gcJCQQLAYcqIYzv" },
+      { name: "Glory to the Son of God", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=gIO2a5jFuXY" },
+      { name: "Mbiri kuGwayana", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=YHHEEv94r-0" },
+      { name: "Hallowed be your name", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=lIcUOoXQ5RI" },
+    ],
+  },
+  {
+    id: 3,
+    title: "God Remains",
+    year: "2024", // Adjust year as needed
+    description: "An exploration of God's unchanging nature through traditional and contemporary worship.",
+    coverImage: "/covers/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
+    albumSpotifyUrl: "#", 
+    tracks: [
+      { name: "God Remains", spotifyId: null, youtubeUrl: null },
+      { name: "Tinokudza zita renyu Jesu", spotifyId: null, youtubeUrl: null },
+      { name: "Yahweh", spotifyId: null, youtubeUrl: null },
+      { name: "We worship you", spotifyId: null, youtubeUrl: null },
+      { name: "We praise you", spotifyId: null, youtubeUrl: null },
+      { name: "Ishe ndiMwari", spotifyId: null, youtubeUrl: null },
+      { name: "Hallelujah", spotifyId: null, youtubeUrl: null },
     ],
   },
 ]

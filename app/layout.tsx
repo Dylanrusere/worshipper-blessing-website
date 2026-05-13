@@ -3,6 +3,7 @@ import { Playfair_Display, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { PreloaderProvider } from '@/lib/context/preloader-context'
 import { Preloader } from '@/components/preloader'
+import { WhatsAppChatCta } from '@/components/whatsapp-chat-cta'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -47,6 +48,7 @@ export default function RootLayout({
           <div className="grain-overlay" />
           <Preloader />
           {children}
+          <WhatsAppChatCta />
           <Analytics />
         </PreloaderProvider>
       </body>
