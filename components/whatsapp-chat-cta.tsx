@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { MessageSquare, XIcon } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 
 import {
   Dialog,
@@ -17,7 +18,6 @@ import { Button } from '@/components/ui/button'
 const contacts = [
   { phone: '+263774987995', label: '+263 77 498 7995' },
   { phone: '+263713624817', label: '+263 71 362 4817' },
-  { phone: '+263789606210', label: '+263 78 960 6210' },
 ]
 
 function formatWhatsAppLink(phone: string) {
@@ -85,12 +85,11 @@ export function WhatsAppChatCta() {
                 href={formatWhatsAppLink(contact.phone)}
                 target="_blank"
                 rel="noreferrer"
+                className="flex w-full items-center justify-between"
               >
                 <span>{contact.label}</span>
 
-                <span className="text-xs text-gold/70">
-                  Open in WhatsApp
-                </span>
+                <FaWhatsapp className="h-5 w-5 text-green-500" />
               </a>
             </Button>
           ))}

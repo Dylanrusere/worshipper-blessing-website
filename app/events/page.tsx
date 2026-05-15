@@ -12,7 +12,7 @@ const upcomingEvents = [
   {
     id: 1,
     title: "Kingdom Worship Night",
-    date: "April 15, 2026",
+    date: "June 15, 2026",
     time: "6:00 PM",
     location: "ZAOGA CCCI Assembly, Harare",
     description: "A powerful evening of worship, prayer, and prophetic ministry. Come expecting an encounter with God.",
