@@ -3,11 +3,12 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { fadeUp, staggerContainer, viewportSettings } from "@/lib/animations"
-import { Youtube, Music2, Apple, Music } from "lucide-react"
+import { Youtube } from "lucide-react"
+import { FaSpotify } from "react-icons/fa"
 
 const streamingPlatforms = [
   { name: "YouTube", icon: Youtube, href: "https://youtu.be/WNMfn_9UiU0" },
-  { name: "Spotify", icon: Music2, href: "https://open.spotify.com/track/3jopujUNNNcYjBUHnDzJEJ?si=e9dab4af1efa430f" },
+  { name: "Spotify", icon: FaSpotify, href: "https://open.spotify.com/track/3jopujUNNNcYjBUHnDzJEJ?si=e9dab4af1efa430f" },
 ]
 
 export function LatestReleaseSection() {
