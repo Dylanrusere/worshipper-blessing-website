@@ -14,7 +14,7 @@ const albums = [
     title: "My Attestation",
     year: "2025",
     description: "A powerful collection of worship anthems declaring the holiness and majesty of God.",
-    coverImage: "/covers/mwari-ngaakudzwe.jpeg",
+    coverImage: "/images/mwari-ngaakudzwe.jpeg",
     albumSpotifyUrl: "https://open.spotify.com/album/43y2jZpPZpGz7rK4X2X6Xk", 
     tracks: [
       { name: "Chishamiso", spotifyId: null, youtubeUrl: null },
@@ -29,7 +29,7 @@ const albums = [
     title: "Untitled Album (Live Sessions)",
     year: "2023", // Adjust year as needed
     description: "Raw, powerful live recordings capturing the essence of spontaneous worship.",
-    coverImage: "/covers/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
+    coverImage: "/images/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
     albumSpotifyUrl: "#", 
     tracks: [
       { name: "Hossana", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=9xe05v9Ux9I" },
@@ -45,7 +45,7 @@ const albums = [
     title: "God Remains",
     year: "2021", // Adjust year as needed
     description: "An exploration of God's unchanging nature through traditional and contemporary worship.",
-    coverImage: "/covers/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
+    coverImage: "/images/mwari-ngaakudzwe.jpeg", // Replace with actual cover later
     albumSpotifyUrl: "#", 
     tracks: [
       { name: "God Remains", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=N7_kZF8qRCM&pp=0gcJCQQLAYcqIYzv" },
@@ -66,7 +66,7 @@ const singles = [
     spotifyId: null,
     youtubeUrl: "https://www.youtube.com/watch?v=_RRQe8PWbxI",
     year: "2022",
-    coverImage: "/covers/mwari-ngaakudzwe.jpeg",
+    coverImage: "/images/mwari-ngaakudzwe.jpeg",
   },
 ]
 

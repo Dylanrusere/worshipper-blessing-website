@@ -56,7 +56,7 @@ export function LatestReleaseSection() {
             {/* Album Art */}
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm group">
               <Image
-                src="/covers/mwari-ngaakudzwe.jpeg"
+                src="/images/mwari-ngaakudzwe.jpeg"
                 alt="Mwari Ngaakudzwe Cover"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
