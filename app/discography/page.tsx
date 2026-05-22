@@ -51,7 +51,7 @@ const albums = [
       { name: "God Remains", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=N7_kZF8qRCM&pp=0gcJCQQLAYcqIYzv" },
       { name: "Tinokudza zita renyu Jesu", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=diar6WDvm40" },
       { name: "Yahweh", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=AdiEf5SiC-8" },
-      { name: "We worship you", spotifyId: null, youtubeUrl: null },
+      { name: "We worship you", spotifyId: null, youtubeUrl: "https://youtu.be/_RRQe8PWbxI?si=6bOz2g5uUzZqhKXc" },
       { name: "We praise you", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=9uAqo5JYWxU&pp=0gcJCQQLAYcqIYzv" },
       { name: "Ishe ndiMwari", spotifyId: null, youtubeUrl: "https://www.youtube.com/watch?v=cWU0EzDdGcY" },
       { name: "Hallelujah", spotifyId: null, youtubeUrl: null },
