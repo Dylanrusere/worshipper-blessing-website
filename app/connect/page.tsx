@@ -40,14 +40,39 @@ export default function ConnectPage() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({ name: "", email: "", message: "" })
+    setErrorMessage("")
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/dylaneight01@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          _subject: `New Worship Community Contact from ${formState.name}`,
+        }),
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormState({ name: "", email: "", message: "" })
+      } else {
+        setErrorMessage("Something went wrong. Please try again later.")
+      }
+    } catch (error) {
+      setErrorMessage("Unable to send message. Please check your internet connection.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -57,7 +82,7 @@ export default function ConnectPage() {
         <PageHero
           title="Connect"
           subtitle="Join our worship community and stay connected"
-          backgroundImage="https://images.unsplash.com/photo-1507901747481-84a4f64fda6d?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-1.jpg"
         />
 
         <section className="py-24 md:py-32 bg-charcoal">
@@ -128,7 +153,6 @@ export default function ConnectPage() {
                       >
                         <div className="w-10 h-10 rounded-full border border-border/50 flex items-center justify-center group-hover:border-gold/50 transition-colors">
                           <social.icon 
-                            // Note: react-icons use size as a prop, SiTiktok works perfectly here
                             size={social.name === "TikTok" ? 16 : 18} 
                             className="text-ivory/60 group-hover:text-gold transition-colors" 
                           />
@@ -156,10 +180,16 @@ export default function ConnectPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="p-8 md:p-10 bg-secondary/30 border border-border/30 space-y-6">
+                    {errorMessage && (
+                      <div className="p-3 bg-red-500/10 border border-red-500/30 text-red-400 text-sm rounded">
+                        {errorMessage}
+                      </div>
+                    )}
                     <div>
                       <label className="block text-ivory/80 text-sm mb-2">Name</label>
                       <input
                         type="text"
+                        name="name"
                         required
                         className="w-full px-4 py-3 bg-charcoal border border-border/50 text-ivory focus:border-gold/50 focus:outline-none"
                         placeholder="Your name"
@@ -171,6 +201,7 @@ export default function ConnectPage() {
                       <label className="block text-ivory/80 text-sm mb-2">Email</label>
                       <input
                         type="email"
+                        name="email"
                         required
                         className="w-full px-4 py-3 bg-charcoal border border-border/50 text-ivory focus:border-gold/50 focus:outline-none"
                         placeholder="your@email.com"
@@ -181,6 +212,7 @@ export default function ConnectPage() {
                     <div>
                       <label className="block text-ivory/80 text-sm mb-2">Message</label>
                       <textarea
+                        name="message"
                         required
                         rows={5}
                         className="w-full px-4 py-3 bg-charcoal border border-border/50 text-ivory focus:border-gold/50 focus:outline-none resize-none"
@@ -192,7 +224,7 @@ export default function ConnectPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-deep-gold text-charcoal py-4 transition-colors font-bold uppercase tracking-widest text-xs"
+                      className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-deep-gold text-charcoal py-4 transition-colors font-bold uppercase tracking-widest text-xs disabled:opacity-50"
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                       {!isSubmitting && <Send size={16} />}

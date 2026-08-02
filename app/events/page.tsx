@@ -27,7 +27,7 @@ const pastEvents = [
     title: "My Attestation Live Recording",
     date: "October 3, 2025",
     location: "ZAOGA CCCI Assembly, Harare",
-    attendees: "2,500+",
+    attendees: "850+",
   },
 ]
 
@@ -39,7 +39,7 @@ export default function EventsPage() {
         <PageHero
           title="Events"
           subtitle="Upcoming worship gatherings and ministry events"
-          backgroundImage="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-2.jpg"
         />
 
         {/* Upcoming Events */}

@@ -37,7 +37,7 @@ export function ScriptureSection() {
               God is Spirit, and His worshippers must worship in Spirit and in truth.
             </p>
             <footer className="text-gold text-lg tracking-wide">
-              — John 4:24
+              - John 4:24
             </footer>
           </motion.blockquote>
 

@@ -44,7 +44,7 @@ const concepts = [
     content: [
       "Every genuine worship encounter leaves the worshipper changed. Like Moses descending from the mountain with a radiant face, worshippers who enter God's presence are transformed by what they behold.",
       "The transformation begins in the heart. Bitterness gives way to forgiveness. Fear surrenders to faith. Anxiety is replaced with peace. This inner transformation then manifests outwardly in changed behavior, restored relationships, and renewed purpose.",
-      "The name 'The Worshipper Blessing' speaks to this reality — that the act of worship releases blessing both upon and through the worshipper.",
+      "The name 'The Worshipper Blessing' speaks to this reality, that the act of worship releases blessing both upon and through the worshipper.",
     ],
     scripture: {
       text: "And we all, who with unveiled faces contemplate the Lord's glory, are being transformed into his image with ever-increasing glory.",
@@ -56,7 +56,7 @@ const concepts = [
     icon: BookOpen,
     title: "The Presence of God in Worship",
     content: [
-      "The presence of God is not merely a feeling or emotion — it is the tangible manifestation of the Almighty in our midst. When we worship with pure hearts, we create a throne room for the King of Glory to inhabit.",
+      "The presence of God is not merely a feeling or emotion, it is the tangible manifestation of the Almighty in our midst. When we worship with pure hearts, we create a throne room for the King of Glory to inhabit.",
       "In His presence, the impossible becomes possible. Diseases that medicine cannot cure are healed. Chains that have bound for years are broken. Hearts that have hardened over decades are softened.",
       "Our ministry is built on this foundation: creating spaces where God's presence can manifest freely, unhindered by human agendas or religious formality.",
     ],
@@ -70,7 +70,7 @@ const concepts = [
     icon: Shield,
     title: "Worship as Spiritual Warfare",
     content: [
-      "Worship is not passive — it is one of the most powerful weapons in spiritual warfare. When King Jehoshaphat faced an overwhelming army, God instructed him to send worshippers ahead of the army. As they sang, God set ambushes against the enemy.",
+      "Worship is not passive, it is one of the most powerful weapons in spiritual warfare. When King Jehoshaphat faced an overwhelming army, God instructed him to send worshippers ahead of the army. As they sang, God set ambushes against the enemy.",
       "In the ministry of The Worshipper Blessing, we have witnessed countless instances where worship broke demonic strongholds, delivered the oppressed, and brought victory in impossible situations.",
       "Every song we sing, every note we play, is a declaration of war against the kingdom of darkness and a proclamation of the supremacy of Christ.",
     ],
@@ -184,7 +184,7 @@ export default function SpiritualConceptPage() {
                     &ldquo;{concept.scripture.text}&rdquo;
                   </p>
                   <p className="text-gold text-sm tracking-wide">
-                    — {concept.scripture.reference}
+                    - {concept.scripture.reference}
                   </p>
                 </motion.div>
 
@@ -226,7 +226,7 @@ export default function SpiritualConceptPage() {
                 variants={fadeUp}
                 className="text-gold italic"
               >
-                — The Worshipper Blessing
+                - The Worshipper Blessing
               </motion.p>
               <motion.div
                 variants={lineExpand}

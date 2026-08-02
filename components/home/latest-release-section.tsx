@@ -7,8 +7,8 @@ import { Youtube } from "lucide-react"
 import { FaSpotify } from "react-icons/fa"
 
 const streamingPlatforms = [
-  { name: "YouTube", icon: Youtube, href: "https://youtu.be/WNMfn_9UiU0" },
-  { name: "Spotify", icon: FaSpotify, href: "https://open.spotify.com/track/3jopujUNNNcYjBUHnDzJEJ?si=e9dab4af1efa430f" },
+  { name: "YouTube", icon: Youtube, href: "https://youtu.be/OFQ-psznRzU?list=RDOFQ-psznRzU" },
+  { name: "Spotify", icon: FaSpotify, href: "https://open.spotify.com/track/5Rc71zzdjggLCFDUkN6Any?si=0608a302bfc343b6" },
 ]
 
 export function LatestReleaseSection() {
@@ -56,8 +56,8 @@ export function LatestReleaseSection() {
             {/* Album Art */}
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm group">
               <Image
-                src="/images/mwari-ngaakudzwe.jpeg"
-                alt="Mwari Ngaakudzwe Cover"
+                src="/images/chishamiso.jpg"
+                alt="Chishamiso Cover"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -67,10 +67,10 @@ export function LatestReleaseSection() {
             {/* Song Details */}
             <div className="text-center lg:text-left">
               <h3 className="font-serif text-3xl md:text-4xl text-ivory mb-2">
-                Mwari Ngaakudzwe (Glory be to God)
+                Chishamiso
               </h3>
               <p className="text-ivory/60 leading-relaxed max-w-md">
-                A worship and daily conversation to give thanks, acknowledging God's power in our lives because  he is a good God!
+                "Chishamiso" is a song of worship and daily gratitude, celebrating the wondrous power of God and giving thanks for the miraculous ways He moves in our lives.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export function LatestReleaseSection() {
                 <div className="w-full max-w-2xl shadow-2xl rounded-xl overflow-hidden bg-black/20">
                   {/* Spotify Embed */}
                   <iframe
-                    src={`https://open.spotify.com/embed/track/3jopujUNNNcYjBUHnDzJEJ?utm_source=generator&theme=0`}
+                    src={`https://open.spotify.com/embed/track/5Rc71zzdjggLCFDUkN6Any?utm_source=generator&theme=0`}
                     width="100%"
                     height="152"
                     frameBorder="0"

@@ -213,17 +213,17 @@ export default function MinistryPage() {
 
               <motion.div variants={fadeUp} className="space-y-6 text-ivory/70 leading-relaxed text-lg">
                 <p>
-                  <strong className="text-gold">&ldquo;Anointing goes beyond Gift&rdquo;</strong> — 
+                  <strong className="text-gold">&ldquo;Anointing goes beyond Gift&rdquo;</strong> - 
                   This is the foundational truth that defines our ministry. The name 
                   &ldquo;The Worshipper Blessing&rdquo; carries a profound spiritual meaning. 
-                  It speaks of the transformation that occurs when one becomes a true worshipper — 
+                  It speaks of the transformation that occurs when one becomes a true worshipper,
                   the blessing that flows both to the worshipper and through the worshipper 
                   to others.
                 </p>
                 <p>
                   True worship is not about the skill of the voice or the excellence of 
                   musicianship, though these are important. It is about the posture of 
-                  the heart — a heart fully surrendered to God, creating space for 
+                  the heart, a heart fully surrendered to God, creating space for 
                   His presence to manifest.
                 </p>
                 <p>

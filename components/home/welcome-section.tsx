@@ -54,7 +54,7 @@ export function WelcomeSection() {
               <p className="text-ivory/70 leading-relaxed mb-8">
                 When we come before the presence of God with sincere hearts, 
                 something supernatural happens. Walls come down, healing flows, 
-                and lives are forever changed. This is the heart of our ministry — 
+                and lives are forever changed. This is the heart of our ministry, 
                 to lead people into an encounter with the living God through 
                 authentic, Spirit-led worship.
               </p>
@@ -68,7 +68,7 @@ export function WelcomeSection() {
             <div className="flex items-center gap-4">
               <div className="h-px flex-1 max-w-[60px] bg-gold/40" />
               <p className="font-serif text-lg text-gold italic">
-                — The Worshipper Blessing
+                - The Worshipper Blessing
               </p>
             </div>
           </motion.div>

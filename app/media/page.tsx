@@ -120,7 +120,7 @@ export default function MediaPage() {
         <PageHero
           title="Media"
           subtitle="Moments captured from worship sessions and ministry events"
-          backgroundImage="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2940&auto=format&fit=crop"
+          backgroundImage="/images/hero-4.jpg"
         />
 
         {/* Gallery Section */}

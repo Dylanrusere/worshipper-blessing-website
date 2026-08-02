@@ -133,7 +133,7 @@ export default function DiscographyPage() {
                             </a>
                           ) : (
                             <div className="p-4 bg-white/5 rounded-lg text-ivory/40 italic text-sm">
-                               {track.name} — Coming Soon
+                               {track.name} - Coming Soon
                             </div>
                           )}
                         </div>
