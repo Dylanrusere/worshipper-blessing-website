@@ -35,7 +35,7 @@ const featuredSessions = [
     description: "Experience the reverence of worship in this Spirit-filled studio recording.",
     thumbnail: "/images/mwari-ngaakudzwe.jpeg",
     duration: "8:45",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://www.youtube.com/embed/LAxmNlFVw9M",
   },
   {
     id: 3,
